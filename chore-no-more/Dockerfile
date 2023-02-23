@@ -10,7 +10,7 @@ LABEL title = "chore-no-more"
 WORKDIR chore-no-more
 
 # Copy app dependencies to container
-COPY ./package*.json ./
+COPY ./chore-no-more/package*.json ./
 
 # Add `/app/node_modules/.bin` to $PATH
 ENV PATH /chore-no-more/node_modules/.bin:$PATH
